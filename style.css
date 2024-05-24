@@ -100,7 +100,87 @@ nav ul li a {
   color: #184363; /* Change the color of the placeholder text */
 }
 
+/* Trending Section */
+
+#HeaderTrending {
+  height: 25px;
+  margin-bottom: 59px;
+}
+#HeaderTrending p {
+  position: relative;
+  left: 638px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0a2640;
+}
+
+#TrendingSection {
+  position: relative;
+  left: 153px;
+  margin-bottom: 85px;
+  height: 230px;
+  width: 1135px;
+}
+
+.TrendingBoxes {
+  position: absolute;
+  top: 0;
+  height: 200px;
+  width: 195px;
+  border-radius: 15px;
+  border: 0.8px solid #99f5ad;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.TrendingLabels{
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.TB1 {
+  left: 0;
+  background-image: url(./resources/Trending1.png);
+}
+
+.TB2 {
+  left: 240px;
+  background-image: url(./resources/Trending2.png);
+}
+.TB3 {
+  left: 480px;
+  background-image: url(./resources/Trending3.png);
+}
+.TB4 {
+  left: 720px;
+  background-image: url(./resources/Trending4.png);
+}
+.TB5 {
+  left: 960px;
+  background-image: url(./resources/Trending5.png);
+}
+
+.TL1{ 
+  left: 60px;
+}
+.TL2{
+ left: 301px;
+}
+.TL3{
+  left: 540px;
+}
+.TL4{
+  left: 741px;
+}
+.TL5{
+  right: 42px;
+}
 /* Deal of Week Section */
+
 #HeaderDeal {
   display: flex;
   align-items: center;
@@ -114,14 +194,16 @@ nav ul li a {
 #HeaderDeal h3 {
   position: absolute;
   left: 507px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #184363;
 }
-#DayTimerBlock{
+#DayTimerBlock {
   position: absolute;
   left: 738px;
   display: flex;
   gap: 8px;
   height: 50px;
-
 }
 .DayTimerBoxes {
   display: flex;
@@ -131,16 +213,15 @@ nav ul li a {
   height: 50px;
   width: 50px;
   color: #fff;
-  background-color: #3CDA5F;
+  background-color: #3cda5f;
   border-radius: 5px;
-  margin-left: 24px;
 }
 
-.DayTimerBoxes h5{
+.DayTimerBoxes h5 {
   font-size: 18px;
 }
 
-.DayTimerBoxes p{
+.DayTimerBoxes p {
   font-size: 10px;
 }
 
@@ -212,7 +293,8 @@ nav ul li a {
   top: 181.31px;
 }
 
-.Deal1 button, .Deal2 button{
+.Deal1 button,
+.Deal2 button {
   position: absolute;
   top: 221.81px;
   left: 327.88px;
@@ -224,10 +306,11 @@ nav ul li a {
   border-radius: 72px;
   border: none;
   font-size: 14px;
-  background-color: #EDF4F6;
+  background-color: #edf4f6;
 }
 
-.Deal1 button img, .Deal2 button img{
+.Deal1 button img,
+.Deal2 button img {
   height: 18px;
   width: 18px;
   margin-right: 9px;
