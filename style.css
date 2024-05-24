@@ -8,7 +8,8 @@
 
 body {
   font-family: "Outfit", sans-serif;
-  max-width: 1440px;
+  background-color: #fff;
+  width: 1440px;
 }
 
 header {
@@ -16,7 +17,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f8f8f8;
   height: 84px;
 }
 
@@ -66,7 +66,7 @@ nav ul li a {
 }
 
 .Search {
-  background-color: #d6eaf9;
+  background-color: #edf4f6;
   display: flex;
   height: 64px;
   align-items: center;
@@ -83,12 +83,20 @@ nav ul li a {
   background-color: #fff;
   border-radius: 45px;
 }
-.searchbar input {
-  width: 1085px;
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 47px;
-  border: none;
   background-color: #fff;
   border-radius: 45px;
+}
+.searchbar input {
+  border: 0;
+  width: 900px;
+  height: 47px;
+  background-color: #fff;
+  border-radius: 45px 0 0 45px;
 }
 .searchbar input[type="text"] {
   padding: 17px;
@@ -97,7 +105,80 @@ nav ul li a {
 .searchbar input[type="text"]::placeholder {
   font-weight: 500;
   font-size: 14px;
-  color: #184363; /* Change the color of the placeholder text */
+  color: #184363;
+}
+
+.searchbar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 47px;
+  background-color: #3cda5f;
+  border: none;
+  border-radius: 0 45px 45px 0;
+  cursor: pointer;
+}
+
+/* Hero Section */
+
+.wrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: hidden;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text h1,
+.hero-text h3 {
+  font-size: 72px;
+  line-height: 90.72px;
+}
+.hero-text h3 {
+  color: #3cda5f;
+}
+.hero-text p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #184363;
+  margin-top: 20px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #3cda5f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.hero-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 20px, center;
+  width: 600px;
+  height: 600px;
+  background-image: url("./resources/image.png"),
+    url("./resources/Ellipse-7.png");
+  position: relative;
+}
+
+.floating-comment {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 439px;
+  height: 95px;
+  position: absolute;
+  bottom: 46px;
+  left: 51.99px;
 }
 
 /* Trending Section */
@@ -133,7 +214,7 @@ nav ul li a {
   background-position: center;
   background-size: cover;
 }
-.TrendingLabels{
+.TrendingLabels {
   position: absolute;
   bottom: 0;
   height: 25px;
@@ -164,19 +245,19 @@ nav ul li a {
   background-image: url(./resources/Trending5.png);
 }
 
-.TL1{ 
+.TL1 {
   left: 60px;
 }
-.TL2{
- left: 301px;
+.TL2 {
+  left: 301px;
 }
-.TL3{
+.TL3 {
   left: 540px;
 }
-.TL4{
+.TL4 {
   left: 741px;
 }
-.TL5{
+.TL5 {
   right: 42px;
 }
 /* Deal of Week Section */
