@@ -329,15 +329,25 @@ nav ul li a {
 /* Trending Section */
 
 #HeaderTrending {
+  position: relative;
   height: 25px;
   margin-bottom: 59px;
 }
 #HeaderTrending p {
-  position: relative;
+  position: absolute;
   left: 638px;
   font-size: 20px;
   font-weight: 600;
   color: #0a2640;
+}
+
+#HeaderTrending img{
+  position: absolute;
+  top: 7px;
+  left: 773px;
+  width: 39.11px;
+  height: 27.12px;
+
 }
 
 #TrendingSection {
