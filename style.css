@@ -869,6 +869,7 @@ p.Para2 {
   border: none;
   border-radius: 10px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 /* Footer Section */
